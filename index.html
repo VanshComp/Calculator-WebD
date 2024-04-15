@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Calculator</title>
+    <link rel="Stylesheet" href="style.css">
+    <script defer src="index.js"></script>
+</head>
+<body>
+    <header>
+        <div class="info1">
+            <i class="fa-solid fa-calculator fa-xl" style="color: #000000;"></i>
+            <p>Calculator</p>
+        </div>
+        <div class="info2">
+            <i class="fa-solid fa-bars fa-lg" style="color: #000000;"></i>
+            <p><b>Standard</b></p>
+            <i class="fa-solid fa-users fa-lg" style="color: #000000;"></i>
+        </div>
+    </header>
+    <section>
+        <main>
+            <input class="input" type="text">        
+        </main>
+        <div class="col">
+            <button onclick="appendToInput('%')">%</button>
+            <button onclick="clearInput()">CE</button>
+            <button onclick="clearAll()">C</button>
+            <button onclick="clearInput()">Ex</button>
+        </div>
+        <div class="col">
+            <button onclick="calculateInverse()">1/x</button>
+            <button onclick="square()">x<sup style="color: #000000;">2</sup></button>
+            <button onclick="squareRoot()"><sub style="color: #000000;">2</sub>/x</button>
+            <button onclick="appendToInput('/')">/</button>
+        </div>
+        <div class="col">
+            <button onclick="appendToInput('7')">7</button>
+            <button onclick="appendToInput('8')">8</button>
+            <button onclick="appendToInput('9')">9</button>
+            <button onclick="appendToInput('*')">x</button>
+        </div>
+        <div class="col">
+            <button onclick="appendToInput('4')">4</button>
+            <button onclick="appendToInput('5')">5</button>
+            <button onclick="appendToInput('6')">6</button>
+            <button onclick="appendToInput('-')">-</button>
+        </div>
+        <div class="col">
+            <button onclick="appendToInput('1')">1</button>
+            <button onclick="appendToInput('2')">2</button>
+            <button onclick="appendToInput('3')">3</button>
+            <button onclick="appendToInput('+')">+</button>
+        </div>
+        <div class="col">
+            <button>+/-</button>
+            <button onclick="appendToInput('0')">0</button>
+            <button onclick="appendToInput('.')">.</button>
+            <button style="background-color: chocolate;" onclick="calculateResult()">Result</button>
+        </div>
+    </section>
+</body>
+</html>
